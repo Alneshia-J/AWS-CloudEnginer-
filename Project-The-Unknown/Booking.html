@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Unknown | Book a Table</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h1>The Unknown</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Book a Table</a></li>
+                <li><a href="order.html">Order Online</a></li>
+                <li><a href="confirmation.html">Confirmation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <h2>Book a Table</h2>
+        <p>Reserve your spot at The Unknown. Fill in the details below:</p>
+
+        <form class="booking-form" action="confirmation.html" method="GET">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Number of Guests:</label>
+            <select id="guests" name="guests" required>
+                <option value="">Select number of guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+                <option value="7">7+ Guests</option>
+            </select>
+
+            <label for="seating">Seating Preference:</label>
+            <select id="seating" name="seating" required>
+                <option value="">Select seating preference</option>
+                <option value="indoor">Indoor</option>
+                <option value="outdoor">Outdoor</option>
+                <option value="private">Private Dining</option>
+                <option value="bar">Bar Area</option>
+            </select>
+
+            <label for="special">Special Requests:</label>
+            <textarea id="special" name="special" placeholder="Any special requests? (e.g., birthday, dietary needs)"></textarea>
+
+            <button type="submit">Confirm Booking</button>
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 The Unknown Restaurant. All rights reserved.</p>
+        <p>Built by Team Unknown | Praesignis AWS re/Start Programme</p>
+    </footer>
+
+</body>
+</html>
